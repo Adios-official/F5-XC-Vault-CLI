@@ -8,13 +8,13 @@
 
 F5XC Vault CLI is a robust, pipeline-ready Python script that automates the secure deployment of TLS/SSL certificates to F5 Distributed Cloud. It seamlessly handles F5's proprietary Zero-Trust "Blindfolding" encryption, ensuring your private keys never traverse the network in plaintext.
 
-## 📖 Table of Contents
+##  Table of Contents
 
 * [Why this tool? (The F5 Blindfolding Concept)](#why-this-tool-the-f5-blindfolding-concept)
 * [Architecture & Workflow](#architecture--workflow)
-* [✨ Key Features](#-key-features)
-* [🛠 Prerequisites](#-prerequisites)
-* [🚀 Usage Guide](#-usage-guide)
+* [ Key Features](#-key-features)
+* [ Prerequisites](#-prerequisites)
+* [ Usage Guide](#-usage-guide)
   * [Standard Deployment](#standard-deployment)
   * [CI/CD Pipeline Integration](#cicd-pipeline-integration)
   * [Bulk Deployment (Bash Loop)](#bulk-deployment-bash-loop)
@@ -74,7 +74,7 @@ sequenceDiagram
     CLI-->>User: Return 200 OK & JSON output
 ```
 
-## ✨ Key Features
+##  Key Features
 
 * **Automated Blindfolding:** Handles all public key fetching, policy binding, and payload structuring dynamically.
 * **Cryptographic Pre-Validation:** Uses OpenSSL to verify that your `.pem` and `.key` actually match before attempting deployment, saving you from broken TLS handshakes.
@@ -91,7 +91,7 @@ Ensure the following dependencies are installed on the machine or CI/CD runner:
 3. **OpenSSL**: Used locally for cryptographic modulus validation.
 4. **F5 XC API Credential**: A `.p12` API credential generated from your F5 XC Console.
 
-## 🚀 Usage Guide
+##  Usage Guide
 
 ### Standard Deployment (Manual Run)
 
